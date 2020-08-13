@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import PriceCard from './components/price-card';
+import PriceCard from './components/price-card/price-card';
 
 function App() {
   return (
