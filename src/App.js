@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import PriceCard from './components/price-card/price-card';
+import { Tabs, Tab } from './components/tab/tab';
 
 function App() {
   return (
@@ -22,6 +23,12 @@ function App() {
         totalPlatformPrice: '$299',
         finalPackagePrice: '$1679'
       }} />
+
+      <Tabs>
+        <Tab name='One'>1</Tab>
+        <Tab name='Two'>2</Tab>
+        <Tab name='Three'>3</Tab>
+      </Tabs>
     </>
   );
 }
