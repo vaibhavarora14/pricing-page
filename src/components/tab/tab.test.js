@@ -24,12 +24,12 @@ describe('tab component tests', () => {
         expect(queryByText('Tab 3 content')).toBeFalsy();
     });
 
-    test('default tab content active', () => {
+    test('active tab content active', () => {
         const { queryByText } = render(<Tabs>
             <Tab name='Tab 1'>
                 Tab 1 content
             </Tab>
-            <Tab default name='Tab 2'>
+            <Tab active name='Tab 2'>
                 Tab 2 content
             </Tab>
             <Tab name='Tab 3'>
@@ -47,7 +47,7 @@ describe('tab component tests', () => {
             <Tab name='Tab 1'>
                 Tab 1 content
             </Tab>
-            <Tab default name='Tab 2'>
+            <Tab active name='Tab 2'>
                 Tab 2 content
             </Tab>
             <Tab name='Tab 3'>
