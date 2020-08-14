@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import { Tabs, Tab } from './tab';
 
-describe('tab component tests', () => {
+describe('tabs component tests', () => {
     test('rendering of tabs header in DOM', () => {
         const { queryByText } = render(<Tabs>
             <Tab name='Tab 1'>
@@ -24,12 +24,12 @@ describe('tab component tests', () => {
         expect(queryByText('Tab 3 content')).toBeFalsy();
     });
 
-    test('active tab content active', () => {
+    test('active tab content', () => {
         const { queryByText } = render(<Tabs>
             <Tab name='Tab 1'>
                 Tab 1 content
             </Tab>
-            <Tab active name='Tab 2'>
+            <Tab selected name='Tab 2'>
                 Tab 2 content
             </Tab>
             <Tab name='Tab 3'>
@@ -47,7 +47,7 @@ describe('tab component tests', () => {
             <Tab name='Tab 1'>
                 Tab 1 content
             </Tab>
-            <Tab active name='Tab 2'>
+            <Tab selected name='Tab 2'>
                 Tab 2 content
             </Tab>
             <Tab name='Tab 3'>
@@ -71,4 +71,11 @@ describe('tab component tests', () => {
         expect(queryByText('Tab 2 content')).toBeFalsy();
         expect(queryByText('Tab 3 content')).toBeTruthy();
     });
+});
+
+describe('tab component tests', () => {
+    const { queryByText } = render(<Tab name="Normal Tab"> Normal tab content </Tab>);
+
+    expect(queryByText('Normal Tab')).toBeTruthy();
+    expect(queryByText('Normal tab content')).toBeTruthy();
 });
