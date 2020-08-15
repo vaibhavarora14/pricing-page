@@ -1,5 +1,6 @@
 # Pricing page
 [![tests status](https://img.shields.io/github/workflow/status/varora1406/pricing-page/Test?label=test)](https://github.com/varora1406/pricing-page/actions?query=workflow%3ATest)
+![Top language](https://img.shields.io/github/languages/top/varora1406/pricing-page)
 
 ## Demo
 
