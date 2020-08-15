@@ -19,7 +19,7 @@ const PriceCard = (incomingProps) => {
     };
 
     return (
-        <>
+        <div>
             <div style={head} data-testid="plan-name">{props.data.planName}</div>
             <center>
                 <div style={largeFont} data-testid="price-per-live-transfer">
@@ -50,7 +50,7 @@ const PriceCard = (incomingProps) => {
 
                 {/* Button - Start your trial */}
             </center>
-        </>
+        </div>
     );
 }
 
