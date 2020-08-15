@@ -7,7 +7,6 @@ const PriceCardModal = (props) => {
     const [showModal, setModalState] = useState(false);
 
     useEffect(() => {
-        console.log(props.show)
         setModalState(props.show);
     }, [props.show]);
 
