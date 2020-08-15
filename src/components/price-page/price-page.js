@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Tabs, Tab } from "../tab/tab";
 import PriceCard from "../price-card/price-card";
 
-const dataAPI = `https://api.jsonbin.io/b/5f3798f8af209d1016bbe054`;
+const dataAPI = `https://api.jsonbin.io/b/5f37d6294d93991036154add`;
 
 const PricePage = () => {
     const [data, setData] = useState([]);

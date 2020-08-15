@@ -1,5 +1,5 @@
 import React from 'react';
-import { head, largeFont, separator, mediumFont, smallFont, bottom } from './price-card.style';
+import { head, largeFont, separator, mediumFont, smallFont, bottom, popularPriceCard } from './price-card.style';
 
 const defaultProps = {
     data: {
@@ -8,7 +8,8 @@ const defaultProps = {
         pricePerLiveTransfer: '',
         totalQualifiedLeadPrice: '',
         totalPlatformPrice: '',
-        finalPackagePrice: ''
+        finalPackagePrice: '',
+        popular: false
     }
 }
 
@@ -18,8 +19,17 @@ const PriceCard = (incomingProps) => {
         ...incomingProps
     };
 
+    const getPopularCardStyle = (isPopular) => {
+        let style = { ...popularPriceCard };
+        if (!isPopular) {
+            style = { ...style, visibility: 'hidden' };
+        }
+        return style;
+    }
+
     return (
         <div style={props.style}>
+            <div style={getPopularCardStyle(props.data.popular)}>Most Popular!</div>
             <div style={head} data-testid="plan-name">{props.data.planName}</div>
             <center>
                 <div style={largeFont} data-testid="price-per-live-transfer">

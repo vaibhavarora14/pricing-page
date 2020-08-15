@@ -1,3 +1,5 @@
+const ORANGE = '#EF5A35';
+
 export const head = {
     backgroundColor: '#5A6F90',
     padding: '1rem',
@@ -29,3 +31,11 @@ export const separator = {
     borderBottom: '2px dashed lightgrey',
     margin: '1rem 3rem'
 };
+
+export const popularPriceCard = {
+    backgroundColor: ORANGE,
+    color: '#FFF',
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '1rem'
+}
