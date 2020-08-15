@@ -33,3 +33,10 @@ export const overlay = {
     opacity: '0.4',
     zIndex: '1'
 }
+
+export const cross = {
+    position: 'absolute',
+    right: '1rem',
+    width: '1.5rem',
+    cursor: 'pointer'
+}

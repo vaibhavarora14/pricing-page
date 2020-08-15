@@ -1,5 +1,5 @@
 import React from 'react';
-import { head, modal, modalOuter, overlay } from './modal.style';
+import { head, modal, modalOuter, overlay, cross } from './modal.style';
 
 const Modal = (props) => {
     return (
@@ -14,7 +14,7 @@ const Modal = (props) => {
                                 <img
                                     alt="close"
                                     src="/icons/close.svg"
-                                    style={{ position: 'absolute', right: '1rem', width: '1.5rem' }}
+                                    style={cross}
                                     onClick={() => props.onClose && props.onClose.call()}
                                 />
                             </div>
