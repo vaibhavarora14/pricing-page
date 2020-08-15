@@ -1,4 +1,4 @@
-const ORANGE = '#EF5A35';
+import { ORANGE } from '../../colors';
 
 export const head = {
     backgroundColor: '#5A6F90',
