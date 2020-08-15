@@ -1,5 +1,6 @@
 import React from 'react';
 import { head, largeFont, separator, mediumFont, smallFont, bottom, popularPriceCard } from './price-card.style';
+import Button from '../button/button';
 
 const defaultProps = {
     data: {
@@ -58,6 +59,7 @@ const PriceCard = (incomingProps) => {
                     data-testid="final-package-price"
                 >{props.data.finalPackagePrice}/mo</div>
 
+                <Button> Start Your Trial </Button>
                 {/* Button - Start your trial */}
             </center>
         </div>
