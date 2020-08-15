@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { tab as tabStyle, tabs as tabsStyle, tabBorder, selectedTab } from './tab.style';
+import './tab.css';
 
 const Tabs = (incomingProps) => {
     const props = { ...incomingProps };
@@ -42,13 +44,32 @@ const Tabs = (incomingProps) => {
         return childClone;
     }
 
+    const getTabStyle = (children, currentIndex) => {
+        let style = { ...tabStyle };
+
+        if (currentIndex !== children.length - 1) {
+            style = { ...style, ...tabBorder };
+        }
+
+        if (currentIndex === selectedIndex) {
+            style = { ...style, ...selectedTab };
+        }
+
+        return style;
+    }
+
     return (
         <>
-            {children.map((tab, index) =>
-                <span key={index} onClick={() => setIndex(index)}>
-                    {tab.props.name}
-                </span>
-            )}
+            <div style={{ ...tabsStyle, marginBottom: '1rem', overflow: 'hidden' }}>
+                {children.map((tab, index) =>
+                    <span
+                        className="tab"
+                        style={getTabStyle(children, index)}
+                        key={index} onClick={() => setIndex(index)}>
+                        {tab.props.name}
+                    </span>
+                )}
+            </div>
 
             {getTabContent(children).map(child => child)}
         </>
