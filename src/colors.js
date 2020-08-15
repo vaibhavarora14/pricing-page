@@ -1,0 +1,1 @@
+export const ORANGE = '#EF5A35';
