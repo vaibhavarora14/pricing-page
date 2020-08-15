@@ -8,3 +8,7 @@
   color: #fff;
   background-color: #ef5a35;
 }
+
+.orangeTheme:focus {
+  outline: none;
+}
