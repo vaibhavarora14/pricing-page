@@ -1,0 +1,21 @@
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4d5b72;
+}
+
+input {
+  padding: 0.6rem;
+  border-radius: 0.15rem;
+  box-shadow: none;
+  border: 1px solid #4d5b72;
+  outline: none;
+}
+
+.inputWrapper {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}

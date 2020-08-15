@@ -1,6 +1,7 @@
-import React from 'react';
-import { head, largeFont, separator, mediumFont, smallFont, bottom, popularPriceCard } from './price-card.style';
+import React, { useState } from 'react';
 import Button from '../button/button';
+import PriceCardModal from '../price-card-modal/price-card-modal';
+import { bottom, head, largeFont, mediumFont, popularPriceCard, separator, smallFont } from './price-card.style';
 
 const defaultProps = {
     data: {
@@ -19,6 +20,8 @@ const PriceCard = (incomingProps) => {
         ...defaultProps,
         ...incomingProps
     };
+
+    const [showModal, setModalState] = useState(false);
 
     const getPopularCardStyle = (isPopular) => {
         let style = { ...popularPriceCard };
@@ -59,10 +62,11 @@ const PriceCard = (incomingProps) => {
                     data-testid="final-package-price"
                 >{props.data.finalPackagePrice}/mo</div>
 
-                <Button> Start Your Trial </Button>
-                {/* Button - Start your trial */}
+                <Button click={() => setModalState(!showModal)}> Start Your Trial </Button>
             </center>
+            <PriceCardModal planName={props.data.planName} show={showModal} onClose={() => setModalState(false)} />
         </div>
+
     );
 }
 
