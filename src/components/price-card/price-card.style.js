@@ -3,7 +3,9 @@ export const head = {
     padding: '1rem',
     color: 'white',
     textTransform: 'capitalize',
-    marginBottom: '0.5rem'
+    marginBottom: '0.5rem',
+    display: 'flex',
+    justifyContent: 'center'
 }
 
 export const bottom = { ...head }

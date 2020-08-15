@@ -25,5 +25,16 @@ export const tabs = {
     border: '1px solid transparent',
     borderRadius: '0.5rem',
     backgroundColor: '#F8F8F8',
+    flexWrap: 'wrap',
+    marginBottom: '2rem',
+    overflow: 'hidden'
+}
+
+export const tabContent = {
+    display: 'flex',
     flexWrap: 'wrap'
+}
+
+export const tabContentChild = {
+    flex: 1
 }

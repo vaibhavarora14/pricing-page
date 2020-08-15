@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { tab as tabStyle, tabs as tabsStyle, tabBorder, selectedTab } from './tab.style';
+import { tab as tabStyle, tabs as tabsStyle, tabBorder, selectedTab, tabContent, tabContentChild } from './tab.style';
 import './tab.css';
 
 const Tabs = (incomingProps) => {
@@ -60,7 +60,7 @@ const Tabs = (incomingProps) => {
 
     return (
         <>
-            <div style={{ ...tabsStyle, marginBottom: '1rem', overflow: 'hidden' }}>
+            <div style={{ ...tabsStyle }}>
                 {children.map((tab, index) =>
                     <span
                         className="tab"
@@ -87,7 +87,7 @@ const Tab = (incomingProps) => {
     return (
         <>
             {!props.insideTabs && <span>{props.name}</span>}
-            <div>{props.selected && props.children}</div>
+            <div style={tabContent}>{props.selected && props.children.map(child => React.cloneElement(child, { style: tabContentChild }))}</div>
         </>
     );
 }
