@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { tab as tabStyle, tabs as tabsStyle, tabBorder, selectedTab, tabContent, tabContentChild } from './tab.style';
+import { tab as tabStyle, tabs as tabsStyle, tabBorder, selectedTab, tabContent } from './tab.style';
 import './tab.css';
 
 const Tabs = (incomingProps) => {
