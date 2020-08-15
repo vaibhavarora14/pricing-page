@@ -84,10 +84,11 @@ const tabDefaultProps = {
 
 const Tab = (incomingProps) => {
     const props = { ...tabDefaultProps, ...incomingProps };
+
     return (
         <>
             {!props.insideTabs && <span>{props.name}</span>}
-            <div style={tabContent}>{props.selected && props.children.map(child => React.cloneElement(child, { style: tabContentChild }))}</div>
+            <div style={tabContent}>{props.selected && props.children}</div>
         </>
     );
 }

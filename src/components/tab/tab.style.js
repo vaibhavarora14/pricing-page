@@ -34,8 +34,3 @@ export const tabContent = {
     display: 'flex',
     flexWrap: 'wrap'
 }
-
-export const tabContentChild = {
-    flex: 1,
-    margin: '0 1rem'
-}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Tabs, Tab } from "../tab/tab";
 import PriceCard from "../price-card/price-card";
+import { Tab, Tabs } from "../tab/tab";
+import { priceCard as priceCardStyle } from "./price-page.style";
 
 const dataAPI = `https://api.jsonbin.io/b/5f37d6294d93991036154add`;
 
@@ -40,7 +41,7 @@ const PricePage = () => {
         <Tabs>
             {getTabsHeader().map((header, index) =>
                 <Tab key={index} name={header}>
-                    {getTabData(header).map((data, index) => <PriceCard key={index} data={data.details} />)}
+                    {getTabData(header).map((data, index) => <PriceCard style={priceCardStyle} key={index} data={data.details} />)}
                 </Tab>
             )}
         </Tabs>
