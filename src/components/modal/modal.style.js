@@ -24,8 +24,6 @@ export const modal = {
     borderRadius: '0.1rem',
     overflowY: 'auto',
     maxHeight: 'calc(100vh - 6rem)',
-    display: 'flex',
-    flexDirection: 'column'
 }
 
 export const overlay = {

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Modal from "../modal/modal";
 import './form.css';
+import Button from '../button/button';
 
 const PriceCardModal = (props) => {
     const [showModal, setModalState] = useState(false);
@@ -89,6 +90,11 @@ const PriceCardModal = (props) => {
                     <label for="realClosers" style={{ marginRight: '1.5rem' }}> Real Closers </label>
                 </div>
             </div>
+
+            <Button solid
+                style={{ width: 'inherit', padding: '0.5rem 1rem' }}
+                click={() => setModalState(false)}
+            >Submit</Button>
         </Modal>
     );
 };

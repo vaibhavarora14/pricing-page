@@ -13,11 +13,20 @@ const defaultStyle = {
 }
 
 const Button = (props) => {
+    const getClassNames = () => {
+        let classNames = 'orangeTheme';
+
+        if (props.solid) {
+            classNames += ' solid';
+        }
+
+        return classNames;
+    }
     return (
         <button
             data-testid={props['data-testid']}
             style={{ ...defaultStyle, ...props.style }}
-            className="orangeTheme"
+            className={getClassNames()}
             onClick={props.click}>
             {props.children}
         </button>

@@ -12,3 +12,8 @@
 .orangeTheme:focus {
   outline: none;
 }
+
+.solid.orangeTheme {
+  background-color: #ef5a35;
+  color: #fff;
+}
