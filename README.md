@@ -1,4 +1,4 @@
-# Pricing page (under development)
+# Pricing page
 
 ## Demo
 
