@@ -5,7 +5,7 @@
 
 This page shows pricing in different range and has form to accept "Start trial" for selected price.
 
-[![Demo](<img src="demo.gif">)](https://youtu.be/8rW-Zbt3OE8)
+[![Demo](demo.gif)](https://youtu.be/8rW-Zbt3OE8)
 
 ## Demo
 
