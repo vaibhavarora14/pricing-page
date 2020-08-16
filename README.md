@@ -5,11 +5,17 @@
 
 This page shows pricing in different range and has form to accept "Start trial" for selected price.
 
-[![Demo](demo.gif)](https://youtu.be/8rW-Zbt3OE8)
-
 ## Demo
 
-https://pricing-page-squad.netlify.app/
+URL - https://pricing-page-squad.netlify.app/
+
+(Click on below gif's to see full video)
+
+#### Application Demo
+[![Demo](demo.gif)](https://youtu.be/8rW-Zbt3OE8)
+
+#### Project folder structure
+<i> details coming soon... </i>
 
 ## Installation
 
