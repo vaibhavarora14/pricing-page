@@ -19,6 +19,10 @@ URL - https://pricing-page-squad.netlify.app/
 
 [![Project Structure](demo/project-structure.gif)](https://youtu.be/FlZoSAAF9MM)
 
+#### Project Architecture
+
+[![Project Architecture](demo/project-architecture.gif)](https://youtu.be/_YR-LCxSpsc)
+
 ## Installation
 
 Pre-requisite: Either have ![`yarn`](https://classic.yarnpkg.com/en/docs/install/#windows-stable) or ![`npm`](https://docs.npmjs.com/cli/install) installed in your machine globally
